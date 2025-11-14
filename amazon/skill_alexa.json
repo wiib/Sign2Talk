@@ -1,0 +1,88 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "modo traductor de señas",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "TraducirIntent",
+                    "slots": [
+                        {
+                            "name": "palabra",
+                            "type": "PALABRAS_BASICAS"
+                        }
+                    ],
+                    "samples": [
+                        "di {palabra}",
+                        "traduce {palabra}",
+                        "mano {palabra}",
+                        "seña para {palabra}",
+                        "ejecuta {palabra}",
+                        "{palabra}"
+                    ]
+                },
+                {
+                    "name": "DesactivarModoIntent",
+                    "slots": [],
+                    "samples": [
+                        "sal de modo traductor de señas",
+                        "desactiva modo traductor de señas",
+                        "salir del modo traductor"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "PALABRAS_BASICAS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "hola"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "adiós"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gracias"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "por favor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sí"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "no"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
