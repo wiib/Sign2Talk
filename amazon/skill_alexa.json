@@ -16,11 +16,23 @@
                     "samples": []
                 },
                 {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
                     "name": "TraducirIntent",
                     "slots": [
                         {
                             "name": "palabra",
-                            "type": "PALABRAS_BASICAS"
+                            "type": "AMAZON.SearchQuery"
                         }
                     ],
                     "samples": [
@@ -29,7 +41,8 @@
                         "mano {palabra}",
                         "seña para {palabra}",
                         "ejecuta {palabra}",
-                        "{palabra}"
+                        "quiero decir {palabra}",
+                        "escribe {palabra}"
                     ]
                 },
                 {
@@ -46,43 +59,7 @@
                     "samples": []
                 }
             ],
-            "types": [
-                {
-                    "name": "PALABRAS_BASICAS",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "hola"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "adiós"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "gracias"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "por favor"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "sí"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "no"
-                            }
-                        }
-                    ]
-                }
-            ]
+            "types": []
         }
     }
 }
