@@ -23,3 +23,14 @@ correspondientes a las manos robóticas.
 `amazon/skill_alexa.json` — Skill de Alexa que interpreta la voz
 del usuario para producir los _intents_ necesarios para iniciar
 y terminar la traducción de voz a señas.
+
+`detection/record_data.py` ­— Graba muestras de señas, para cada letra,
+en un archivo CSV para entrenar el modelo de clasificación.
+
+`detection/train_model.py` — Entrena el modelo Random Forest usando
+las señas grabadas previamente, produciendo un archivo con el modelo
+entrenado.
+
+`detection/predict_v3.py` — Ejecuta el modelo y clasifica señas
+en tiempo real usando la cámara del dispositivo, permitiendo construir
+frases y enviarlas a la Skill de Alexa vía MQTT.
