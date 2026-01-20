@@ -1,0 +1,75 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "modo traductor de señas",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "DespedidaIntent",
+                    "slots": [],
+                    "samples": [
+                        "despídete",
+                        "despídete bien",
+                        "di adiós a todos",
+                        "despídete de la gente"
+                    ]
+                },
+                {
+                    "name": "TraducirIntent",
+                    "slots": [
+                        {
+                            "name": "palabra",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "di {palabra}",
+                        "traduce {palabra}",
+                        "mano {palabra}",
+                        "seña para {palabra}",
+                        "ejecuta {palabra}",
+                        "quiero decir {palabra}",
+                        "muestra {palabra}"
+                    ]
+                },
+                {
+                    "name": "DesactivarModoIntent",
+                    "slots": [],
+                    "samples": [
+                        "sal de modo traductor de señas",
+                        "desactiva modo traductor de señas",
+                        "salir del modo traductor"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}
